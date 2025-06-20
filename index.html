@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 2 Solution</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .main-title {
+      text-align: center;
+      font-size: 2em;
+      margin: 20px 0;
+    }
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .box {
+      position: relative;
+      border: 1px solid black;
+      padding: 40px 15px 15px 15px;
+      background-color: #f0f0f0;
+      float: left;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .box-title {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #e57373;
+      color: white;
+      border: 1px solid black;
+      padding: 5px 10px;
+      font-size: 1.25em;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #chicken, #beef {
+        width: 48%;
+        margin-right: 4%;
+      }
+      #beef {
+        margin-right: 0;
+      }
+      #sushi {
+        width: 100%;
+      }
+    }
+    @media (min-width: 992px) {
+      .box {
+        width: 31.3%;
+        margin-right: 3%;
+      }
+      .box:nth-child(3) {
+        margin-right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="main-title">Our Menu</h1>
+
+  <div class="container">
+    <section class="box" id="chicken">
+      <div class="box-title">Chicken</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempor sit amet augue nec porta.</p>
+    </section>
+    <section class="box" id="beef">
+      <div class="box-title">Beef</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec elit vel ligula lacinia aliquam.</p>
+    </section>
+    <section class="box" id="sushi">
+      <div class="box-title">Sushi</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae augue sed massa porta vehicula.</p>
+    </section>
+  </div>
+</body>
+</html>
